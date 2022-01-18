@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #1976D3;
+    background-image: url(/images/background.svg);
+}
+
+
+.box {
+    padding: 15px;
+    background-color: rgba(255, 255, 255);
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+    box-shadow: 2px black;
+    opacity: 0.90;
+    text-align: center;
+}
+
+.box img {
+    width: 30px;
+    height: 30px;
+    padding-right: 8px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-size: 15px;
+    color: grey;
+}
+
+form{
+    justify-content: center;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    width: 75%;
+    height: 25px;
+    margin-top: 15px;
+    text-indent: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+    box-shadow: 0 0 5pt 1pt #D3D3D3;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+  }
+
+::placeholder {
+    color: grey;
+}
+
+.input-field{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    border-color: #1976D3;
+}
+
+.box input[type="submit"]{
+    padding: 10px;
+    width: 75%;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #1976D3;
+    color: #ffff;
+}
+
+form .input-field i {
+    margin-right: 8px;
+    color: grey;
+}
+
+.section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section p{
+    color: grey;
+}
+
+.section-check{
+    margin-top: 10px;
+}
+
+.section-check label{
+    color: black;
+}
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    color: grey;
+}
+
+.footer a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+/*Responsive  */
+
+@media (max-width: 400px) {
+    .box {
+        margin: 20px;
+        padding: 15px;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+        width: 95%;
+    }
+
+    .box input[type="submit"]{
+        width: 83%;
+       
+    }
+    
+}
